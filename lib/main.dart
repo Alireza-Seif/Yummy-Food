@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yummy_food/screens/splash_screen.dart';
+import 'package:yummy_food/screens/splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:yummy_food/constants/image_strings.dart';
-import 'package:yummy_food/screens/on_boarding_screen.dart';
+import 'package:yummy_food/screens/splash/on_boarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
