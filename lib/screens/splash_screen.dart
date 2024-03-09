@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:yummy_food/constants/image_strings.dart';
 import 'package:yummy_food/screens/on_boarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
     Future.delayed(
-      const Duration(seconds: 5),
+      const Duration(seconds: 3),
       () {
         Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (_) => const Onboarding()));
@@ -26,6 +27,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   void dispose() {
+    super.dispose();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,overlays: SystemUiOverlay.values);
   }
 
@@ -35,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen>
       backgroundColor: Colors.white,
       body: Center(
         child: Image(
-          image: AssetImage('assets/images/yummy_food.png'),
+          image: AssetImage(MyImages.yummy),
         ),
       ),
     );
