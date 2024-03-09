@@ -6,6 +6,8 @@ class AppIcons{
 
   //auth icons
   static const google = '$_path/Google.svg';
+  static const apple = '$_path/Apple.svg';
+  static const face_book = '$_path/Facebook.svg';
   
 
   const AppIcons._();
