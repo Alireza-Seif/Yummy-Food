@@ -20,7 +20,7 @@ class GoogleBTN extends StatelessWidget {
           SizedBox(width: 22),
           Text(
             'Continue with Google',
-            style: MyTextStyles.ButtonOne,
+            style: MyTextStyles.button_one,
           ),
         ],
       ),

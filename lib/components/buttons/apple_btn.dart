@@ -21,7 +21,7 @@ class AppleBTN extends StatelessWidget {
           SizedBox(width: 22),
           Text(
             'Continue with GoogleApple',
-            style: MyTextStyles.ButtonOne,
+            style: MyTextStyles.button_one,
           ),
         ],
       ),

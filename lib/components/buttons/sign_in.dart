@@ -10,7 +10,7 @@ class SignInX extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      child: Text('Sign in',style: MyTextStyles.ButtonOne,),
+      child: Text('Sign in',style: MyTextStyles.button_one,),
       onPressed: () {},
       style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary,fixedSize: Size(327, 48)),
     );

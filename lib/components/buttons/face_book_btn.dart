@@ -19,7 +19,7 @@ class FaceBookBTN extends StatelessWidget {
           SizedBox(width: 22),
           Text(
             'Continue with Facebook',
-            style: MyTextStyles.ButtonOne,
+            style: MyTextStyles.button_one,
           ),
         ],
       ),
