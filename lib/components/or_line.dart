@@ -14,13 +14,13 @@ class OrLine extends StatelessWidget {
         Container(
           width: 130,
           height: 0.5,
-          color: AppColors.greyscale,
+          color: AppColors.dark,
         ),
         Text('   or   '),
         Container(
           width: 130,
           height: 0.5,
-          color: AppColors.greyscale,
+          color: AppColors.dark,
         ),
       ],
     );

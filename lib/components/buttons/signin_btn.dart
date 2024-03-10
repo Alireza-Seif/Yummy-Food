@@ -17,7 +17,7 @@ class SignInBTN extends StatelessWidget {
         style: MyTextStyles.button_one,
       ),
       onPressed: () {
-        Navigator.of(context).push(MaterialPageRoute(
+        Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => destinationPage
         ));
       },
