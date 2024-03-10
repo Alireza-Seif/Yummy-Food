@@ -22,7 +22,7 @@ class SignInBTN extends StatelessWidget {
         ));
       },
       style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary, fixedSize: Size(327, 48)),
+          backgroundColor: AppColors.primary, fixedSize: Size(360, 50)),
     );
   }
 }

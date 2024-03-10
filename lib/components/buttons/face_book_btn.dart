@@ -24,7 +24,7 @@ class FaceBookBTN extends StatelessWidget {
         ],
       ),
       style: ElevatedButton.styleFrom(
-          backgroundColor: Color(0xFF415792), fixedSize: Size(327, 44)),
+          backgroundColor: Color(0xFF415792), fixedSize: Size(360, 44)),
       onPressed: () {});
   }
 }

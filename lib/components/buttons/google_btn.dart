@@ -25,7 +25,7 @@ class GoogleBTN extends StatelessWidget {
         ],
       ),
       style: ElevatedButton.styleFrom(
-          backgroundColor: Color(0xFF4285F4), fixedSize: Size(327, 44)),
+          backgroundColor: Color(0xFF4285F4), fixedSize: Size(360, 44)),
       onPressed: () {},
     );
   }

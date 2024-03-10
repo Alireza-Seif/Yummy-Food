@@ -26,7 +26,7 @@ class AppleBTN extends StatelessWidget {
         ],
       ),
       style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.black, fixedSize: Size(327, 44)),
+          backgroundColor: Colors.black, fixedSize: Size(360, 44)),
       onPressed: () {});
   }
 }
