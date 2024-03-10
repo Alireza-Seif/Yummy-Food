@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:yummy_food/constants/theme/app_colors.dart';
 import 'package:yummy_food/constants/theme/app_theme.dart';
-import 'package:yummy_food/screens/auth/signin_screen.dart';
 
 class SignInBTN extends StatelessWidget {
   const SignInBTN({
-    super.key,
+    super.key,required this.destinationPage,
   });
+
+  final Widget destinationPage;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class SignInBTN extends StatelessWidget {
       ),
       onPressed: () {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => LoginScreen(),
+          builder: (context) => destinationPage
         ));
       },
       style: ElevatedButton.styleFrom(

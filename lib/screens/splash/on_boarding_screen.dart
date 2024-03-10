@@ -6,6 +6,7 @@ import 'package:yummy_food/components/buttons/signin_btn.dart';
 import 'package:yummy_food/components/or_line.dart';
 import 'package:yummy_food/components/rich_text/signup_link.dart';
 import 'package:yummy_food/constants/image_strings.dart';
+import 'package:yummy_food/screens/auth/signin_screen.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
@@ -34,7 +35,7 @@ class Onboarding extends StatelessWidget {
                 SizedBox(
                   height: 160,
                 ),
-                SignInBTN(),
+                SignInBTN(destinationPage: LoginScreen(),),
                 SizedBox(
                   height: 24,
                 ),
