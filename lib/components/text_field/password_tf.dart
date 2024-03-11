@@ -64,7 +64,6 @@ class _PhoneTextFieldState extends State<PasswordTF> {
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-            keyboardType: TextInputType.number,
             textInputAction: TextInputAction.done,
             onChanged: (value) {
               setState(() {
