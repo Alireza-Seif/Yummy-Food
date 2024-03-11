@@ -30,4 +30,11 @@ class MyTextStyles {
     fontFamily: 'SF Pro Display',
     fontWeight: FontWeight.w600,
   );
+  
+  static const TextStyle input_style_one = TextStyle(
+    color: Color(0xFF66707A),
+    fontSize: 16,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w500,
+  );
 }
