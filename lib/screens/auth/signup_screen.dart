@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:yummy_food/components/buttons/signin_btn.dart';
 import 'package:yummy_food/components/text_field/email_tf.dart';
@@ -10,7 +9,6 @@ import 'package:yummy_food/constants/theme/app_theme.dart';
 import 'package:yummy_food/screens/home/home_screen.dart';
 import 'package:yummy_food/screens/splash/on_boarding_screen.dart';
 import 'package:yummy_food/widgets/auth/appbar/appbar_x.dart';
-import 'package:yummy_food/widgets/auth/forgot_tb.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -22,7 +20,7 @@ class SignUpScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            AppBarX(title: 'Sign in', destinationPage: Onboarding()),
+            AppBarX(title: 'Sign up', destinationPage: Onboarding()),
             SizedBox(
               height: 50,
             ),
