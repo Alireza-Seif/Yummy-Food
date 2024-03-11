@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yummy_food/constants/theme/app_colors.dart';
 import 'package:yummy_food/constants/theme/app_theme.dart';
 
 class PasswordTF extends StatefulWidget {
@@ -40,26 +41,30 @@ class _PhoneTextFieldState extends State<PasswordTF> {
             decoration: InputDecoration(
               hintText: 'Enter password',
               hintStyle: MyTextStyles.input_style_one,
-              suffix: IconButton(
-                icon:
-                    Icon(_isObscure ? Icons.visibility_outlined : Icons.visibility_off_outlined),
-                onPressed: () {
-                  setState(() {
-                    _isObscure = !_isObscure;
-                  });
-                },
+              
+              suffixIcon: Padding(
+                padding: const EdgeInsets.only(right: 20),
+                child: IconButton(
+                  icon:
+                      Icon(_isObscure ? Icons.visibility_outlined : Icons.visibility_off_outlined),
+                  onPressed: () {
+                    setState(() {
+                      _isObscure = !_isObscure;
+                    });
+                  },
+                ),
               ),
               focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(
                   color:
-                      showError ? Colors.red : Theme.of(context).primaryColor,
+                      showError ? Colors.red : AppColors.grayscale60,
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),
               enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(
                   color:
-                      showError ? Colors.red : Theme.of(context).primaryColor,
+                      showError ? Colors.red : AppColors.grayscale60,
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),

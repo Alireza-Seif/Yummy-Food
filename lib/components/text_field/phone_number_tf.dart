@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yummy_food/constants/theme/app_colors.dart';
 import 'package:yummy_food/constants/theme/app_theme.dart';
 
 class PhoneNumberTF extends StatefulWidget {
@@ -43,6 +44,7 @@ class _PhoneTextFieldState extends State<PhoneNumberTF> {
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: AppColors.grayscale60)
               ),
               counterText: '',
             ),
