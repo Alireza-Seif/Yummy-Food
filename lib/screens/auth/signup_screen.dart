@@ -8,7 +8,6 @@ import 'package:yummy_food/constants/language/app_string.dart';
 import 'package:yummy_food/constants/theme/app_colors.dart';
 import 'package:yummy_food/constants/theme/app_theme.dart';
 import 'package:yummy_food/screens/auth/otp_screen.dart';
-import 'package:yummy_food/screens/home/home_screen.dart';
 import 'package:yummy_food/screens/splash/on_boarding_screen.dart';
 import 'package:yummy_food/widgets/appbar/appbar_x.dart';
 

@@ -23,6 +23,13 @@ class MyTextStyles {
     fontFamily: 'SF Pro Display',
     fontWeight: FontWeight.w600,
   );
+
+  static const TextStyle title_style_tow = TextStyle(
+    color: Color(0xFF171725),
+    fontSize: 24,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w600,
+  );
   
   static const TextStyle title_style_two = TextStyle(
     color: Color(0xFF171725),

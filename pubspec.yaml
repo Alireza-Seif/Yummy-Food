@@ -38,6 +38,7 @@ dependencies:
   provider: ^6.1.2
   flutter_launcher_icons: ^0.13.1
   flutter_svg: ^2.0.10+1
+  pinput: ^4.0.0
 
 dev_dependencies:
   flutter_test:

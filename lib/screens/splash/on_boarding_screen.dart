@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:yummy_food/components/buttons/apple_btn.dart';
 import 'package:yummy_food/components/buttons/face_book_btn.dart';
 import 'package:yummy_food/components/buttons/google_btn.dart';
