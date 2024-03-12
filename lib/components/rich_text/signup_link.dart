@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:yummy_food/constants/language/app_string.dart';
 import 'package:yummy_food/constants/theme/app_theme.dart';
 import 'package:yummy_food/screens/auth/signup_screen.dart';
 
@@ -15,7 +16,7 @@ class SignUpLink extends StatelessWidget {
         text: TextSpan(
           children: [
             TextSpan(
-              text: 'Do not have an account? ',
+              text: AppString.do_not,
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w500,

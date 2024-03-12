@@ -7,7 +7,7 @@ import 'package:yummy_food/components/or_line.dart';
 import 'package:yummy_food/components/rich_text/signup_link.dart';
 import 'package:yummy_food/components/text_field/password_tf.dart';
 import 'package:yummy_food/components/text_field/phone_number_tf.dart';
-import 'package:yummy_food/widgets/auth/appbar/appbar_x.dart';
+import 'package:yummy_food/widgets/appbar/appbar_x.dart';
 import 'package:yummy_food/screens/home/home_screen.dart';
 import 'package:yummy_food/screens/splash/on_boarding_screen.dart';
 import 'package:yummy_food/widgets/auth/forgot_tb.dart';

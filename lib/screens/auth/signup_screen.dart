@@ -4,11 +4,13 @@ import 'package:yummy_food/components/text_field/email_tf.dart';
 import 'package:yummy_food/components/text_field/full_name_tf.dart';
 import 'package:yummy_food/components/text_field/password_tf.dart';
 import 'package:yummy_food/components/text_field/phone_number_tf.dart';
+import 'package:yummy_food/constants/language/app_string.dart';
 import 'package:yummy_food/constants/theme/app_colors.dart';
 import 'package:yummy_food/constants/theme/app_theme.dart';
+import 'package:yummy_food/screens/auth/otp_screen.dart';
 import 'package:yummy_food/screens/home/home_screen.dart';
 import 'package:yummy_food/screens/splash/on_boarding_screen.dart';
-import 'package:yummy_food/widgets/auth/appbar/appbar_x.dart';
+import 'package:yummy_food/widgets/appbar/appbar_x.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -46,8 +48,7 @@ class SignUpScreen extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text:
-                        "By clicking Create account, you agree to the system's\n",
+                    text: AppString.up_by,
                     style: TextStyle(
                         color: AppColors.grayscale70,
                         fontSize: 14,
@@ -55,7 +56,7 @@ class SignUpScreen extends StatelessWidget {
                         fontFamily: 'SF Pro Display'),
                   ),
                   TextSpan(
-                    text: 'Terms and policies',
+                    text: AppString.up_terms,
                     style: MyTextStyles.text_button_one,
                   ),
                 ],
@@ -63,7 +64,7 @@ class SignUpScreen extends StatelessWidget {
             ),
             SizedBox(height: 42),
             SignInBTN(
-              destinationPage: HomeScreen(),
+              destinationPage: OTPScreen(),
             ),
           ],
         ),
