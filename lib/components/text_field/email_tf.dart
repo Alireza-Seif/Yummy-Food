@@ -45,7 +45,7 @@ class _PhoneTextFieldState extends State<EmailTF> {
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(color: AppColors.grayscale60)),
             ),
-            keyboardType: TextInputType.number,
+            keyboardType: TextInputType.emailAddress,
             textInputAction: TextInputAction.done,
           ),
         ),

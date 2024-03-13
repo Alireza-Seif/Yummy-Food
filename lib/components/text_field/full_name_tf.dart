@@ -45,7 +45,7 @@ class _PhoneTextFieldState extends State<FullNameTF> {
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(color: AppColors.grayscale60)),
             ),
-            keyboardType: TextInputType.number,
+            keyboardType: TextInputType.name,
             textInputAction: TextInputAction.done,
           ),
         ),

@@ -48,7 +48,7 @@ class _PhoneTextFieldState extends State<PhoneNumberTF> {
               ),
               counterText: '',
             ),
-            keyboardType: TextInputType.number,
+            keyboardType: TextInputType.phone,
             textInputAction: TextInputAction.done,
           ),
         ),
