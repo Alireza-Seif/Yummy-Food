@@ -4,16 +4,17 @@ import 'package:yummy_food/constants/theme/app_theme.dart';
 
 class SignInBTN extends StatelessWidget {
   const SignInBTN({
-    super.key,required this.destinationPage,
+    super.key,required this.destinationPage, required this.title,
   });
 
   final Widget destinationPage;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       child: Text(
-        'Sign in',
+        title,
         style: MyTextStyles.button_one,
       ),
       onPressed: () {

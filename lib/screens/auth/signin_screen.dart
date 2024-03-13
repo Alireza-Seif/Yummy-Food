@@ -25,14 +25,19 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            AppBarX(title: 'Sign in',destinationPage: Onboarding()),
-            SizedBox(height: 24,),
+            AppBarX(title: 'Sign in', destinationPage: Onboarding()),
+            SizedBox(
+              height: 24,
+            ),
             PhoneNumberTF(),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             PasswordTF(),
             ForgotTB(),
             SizedBox(height: 32.0),
             SignInBTN(
+              title: 'Sign in',
               destinationPage: HomeScreen(),
             ),
             SizedBox(
@@ -64,4 +69,3 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
-

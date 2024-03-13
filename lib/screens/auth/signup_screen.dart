@@ -63,6 +63,7 @@ class SignUpScreen extends StatelessWidget {
             ),
             SizedBox(height: 42),
             SignInBTN(
+              title: 'Sign up',
               destinationPage: OTPScreen(),
             ),
           ],

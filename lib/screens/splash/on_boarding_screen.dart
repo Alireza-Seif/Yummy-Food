@@ -43,6 +43,7 @@ class Onboarding extends StatelessWidget {
                   height: 160,
                 ),
                 SignInBTN(
+                  title: 'Sign in',
                   destinationPage: LoginScreen(),
                 ),
                 SizedBox(
