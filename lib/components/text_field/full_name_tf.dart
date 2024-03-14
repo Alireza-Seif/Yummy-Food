@@ -23,7 +23,7 @@ class _PhoneTextFieldState extends State<FullNameTF> {
             ),
             Text(
               'Full name',
-              style: MyTextStyles.title_style_two,
+              style: MyTextStyles.title_style_three,
             ),
           ],
         ),

@@ -25,7 +25,7 @@ class _PhoneTextFieldState extends State<PasswordTF> {
             ),
             Text(
               'Password',
-              style: MyTextStyles.title_style_two,
+              style: MyTextStyles.title_style_three,
             ),
           ],
         ),
