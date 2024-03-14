@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:yummy_food/components/buttons/signin_btn.dart';
+import 'package:yummy_food/components/buttons/continue_btn.dart';
 import 'package:yummy_food/constants/language/app_string.dart';
 import 'package:yummy_food/constants/theme/app_theme.dart';
 import 'package:yummy_food/screens/auth/signup_screen.dart';
@@ -68,7 +68,7 @@ class _OTPScreenState extends State<OTPScreen> {
               children: [
                 TextSpan(
                     text: AppString.otp_verification,
-                    style: MyTextStyles.title_style_two),
+                    style: MyTextStyles.title_style_four),
                 TextSpan(
                     text: ' 0922******', style: MyTextStyles.text_button_one)
               ],
@@ -80,7 +80,7 @@ class _OTPScreenState extends State<OTPScreen> {
               children: [
                 TextSpan(
                     text: AppString.otp_have,
-                    style: MyTextStyles.title_style_two),
+                    style: MyTextStyles.title_style_three),
                 TextSpan(
                     text: 'Resend ($_start seconds)',
                     style: MyTextStyles.text_button_one)
@@ -88,10 +88,7 @@ class _OTPScreenState extends State<OTPScreen> {
             ),
           ),
           SizedBox(height: 32),
-          SignInBTN(
-            title: 'Continue',
-            destinationPage: HomeScreen(),
-          )
+          ContinueBTN(destinationPage: HomeScreen()),
         ],
       ),
     );
