@@ -11,7 +11,7 @@ class OtpForm extends StatelessWidget {
     final defultPinTheme = PinTheme(
       width: 40,
       height: 40,
-      textStyle: MyTextStyles.title_style_two,
+      textStyle: MyTextStyles.title_style_three,
       decoration: BoxDecoration(
         color: Colors.grey[200],
         borderRadius: BorderRadius.circular(8),
