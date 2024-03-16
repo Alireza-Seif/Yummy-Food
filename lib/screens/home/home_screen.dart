@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yummy_food/widgets/appbar/main_appbar_x.dart';
 import 'package:yummy_food/widgets/home/drawer_x.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -12,10 +13,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       drawer: DrawerX(),
       body: Column(
-        children: [],
+        children: [MainAppBarX(),],
       ),
     );
   }

@@ -58,4 +58,11 @@ static const TextStyle title_style_five = TextStyle(
     fontFamily: 'SF Pro Display',
     fontWeight: FontWeight.w500,
   );
+
+  static const TextStyle app_bar_one = TextStyle(
+    color: AppColors.grayscale80,
+    fontSize: 20,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w500,
+  );
 }

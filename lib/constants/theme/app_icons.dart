@@ -13,6 +13,10 @@ class AppIcons{
   static const wallet = '$_path/wallet.svg';
   static const location = '$_path/location.svg';
   static const discount_shape = '$_path/discount_shape.svg';
+
+  //AppBar
+  static const notification = '$_path/notification.svg';
+  static const bag = '$_path/bag.svg';
   
 
   const AppIcons._();
