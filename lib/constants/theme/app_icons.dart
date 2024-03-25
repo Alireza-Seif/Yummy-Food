@@ -17,6 +17,7 @@ class AppIcons{
   //AppBar
   static const notification = '$_path/notification.svg';
   static const bag = '$_path/bag.svg';
+  static const search_normal = '$_path/search_normal.svg';
   
 
   const AppIcons._();

@@ -16,4 +16,7 @@ class AppString {
   static const otp_have = "Haven't received the code yet?\n          ";
   static const otp_register = "Registered Successfully";
   static const otp_phone ="Your phone number has been successfully\n                            registered";
+
+  // Home Screen
+  static const search = 'What are you yearning for?';
 }

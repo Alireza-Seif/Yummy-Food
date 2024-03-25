@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yummy_food/widgets/appbar/main_appbar_x.dart';
 import 'package:yummy_food/widgets/home/drawer_x.dart';
+import 'package:yummy_food/widgets/home/search_bar_x.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -15,9 +16,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       drawer: DrawerX(),
       body: Column(
-        children: [MainAppBarX(),],
+        children: [
+          MainAppBarX(),
+          SearchBarX(),
+        ],
       ),
     );
   }
 }
-
