@@ -18,7 +18,7 @@ class MyTextStyles {
   );
 
   static const TextStyle title_style_one = TextStyle(
-    color: Color(0xFF171725),
+    color: AppColors.grayscale100,
     fontSize: 20,
     fontFamily: 'SF Pro Display',
     fontWeight: FontWeight.w600,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yummy_food/screens/home/home_screen.dart';
+import 'package:yummy_food/screens/splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Yummy Food',
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }

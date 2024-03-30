@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:yummy_food/constants/image_strings.dart';
 import 'package:yummy_food/constants/theme/app_colors.dart';
+import 'package:yummy_food/constants/theme/app_theme.dart';
 import 'package:yummy_food/widgets/images/my_circular_container.dart';
 import 'package:yummy_food/widgets/images/my_rounded_image.dart';
 
@@ -21,51 +22,66 @@ class _CarouselSliderXState extends State<CarouselSliderX> {
   Widget build(BuildContext context) {
     final controller = Get.put(HomeController());
 
-    return Stack(
+    return Column(
       children: [
-        CarouselSlider(
-          items: [
-            MyRoundedImage(
-              imageUrl: MyImages.slide1,
-            ),
-            MyRoundedImage(
-              imageUrl: MyImages.slide2,
-            ),
-            MyRoundedImage(
-              imageUrl: MyImages.slide3,
+        Row(
+          children: [
+            SizedBox(width: 30),
+            Text(
+              'Special offer',
+              style: MyTextStyles.title_style_one,
             ),
           ],
-          options: CarouselOptions(
-            height: 150,
-            viewportFraction: 1,
-            onPageChanged: (index, reason) =>
-                controller.updatePageIndicator(index),
-            autoPlay: true,
-            aspectRatio: 2,
-            enableInfiniteScroll: true,
-            initialPage: 0,
-            autoPlayInterval: Duration(seconds: 3),
-            pauseAutoPlayOnTouch: true,
-          ),
         ),
-        Positioned(
-          top: 10,
-          left: 100,
-          child: Obx(
-            () => Row(
-              children: [
-                for (var i = 0; i < 3; i++)
-                  MyCircularContainer(
-                    width: 68,
-                    height: 4,
-                    margin: const EdgeInsets.only(right: 6),
-                    backgorundColor: controller.carousalCurrentIndex.value == i
-                        ? Colors.white
-                        : AppColors.grayscale40,
-                  ),
+        SizedBox(height: 10),
+        Stack(
+          children: [
+            CarouselSlider(
+              items: [
+                MyRoundedImage(
+                  imageUrl: MyImages.slide1,
+                ),
+                MyRoundedImage(
+                  imageUrl: MyImages.slide2,
+                ),
+                MyRoundedImage(
+                  imageUrl: MyImages.slide3,
+                ),
               ],
+              options: CarouselOptions(
+                height: 160,
+                viewportFraction: 1,
+                onPageChanged: (index, reason) =>
+                    controller.updatePageIndicator(index),
+                autoPlay: true,
+                aspectRatio: 2,
+                enableInfiniteScroll: true,
+                initialPage: 0,
+                autoPlayInterval: Duration(seconds: 3),
+                pauseAutoPlayOnTouch: true,
+              ),
             ),
-          ),
+            Positioned(
+              top: 10,
+              left: 100,
+              child: Obx(
+                () => Row(
+                  children: [
+                    for (var i = 0; i < 3; i++)
+                      MyCircularContainer(
+                        width: 68,
+                        height: 4,
+                        margin: const EdgeInsets.only(right: 6),
+                        backgorundColor:
+                            controller.carousalCurrentIndex.value == i
+                                ? Colors.white
+                                : AppColors.grayscale40,
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
       ],
     );

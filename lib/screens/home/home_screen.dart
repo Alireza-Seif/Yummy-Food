@@ -19,7 +19,9 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           MainAppBarX(),
+          SizedBox(height: 12),
           SearchBarX(),
+          SizedBox(height: 8),
           CarouselSliderX(),
         ],
       ),
