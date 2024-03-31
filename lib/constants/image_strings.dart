@@ -8,7 +8,7 @@ class MyImages {
   static String slide3 = 'assets/images/slider/slide3.png';
 
   //Home Wrap
-  static String flash_dals = 'assets/images/category/flash_dals.webp';
+  static String flash_dals = 'assets/images/category/flash_deals.webp';
   static String nice_shop = 'assets/images/category/nice_shop.webp';
   static String points = 'assets/images/category/points.webp';
   static String rice = 'assets/images/category/rice.webp';

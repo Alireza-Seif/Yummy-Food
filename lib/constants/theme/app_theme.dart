@@ -72,4 +72,11 @@ static const TextStyle title_style_five = TextStyle(
     fontFamily: 'SF Pro Display',
     fontWeight: FontWeight.w400,
   );
+  
+  static const TextStyle category_style = TextStyle(
+    color: Color(0xFF212121),
+    fontSize: 14,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w600,
+  );
 }
