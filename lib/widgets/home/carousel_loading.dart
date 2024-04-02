@@ -36,34 +36,37 @@ class _CarouselSliderXState extends State<CarouselSliderX> {
         SizedBox(height: 10),
         Stack(
           children: [
-            CarouselSlider(
-              items: [
-                MyRoundedImage(
-                  imageUrl: MyImages.slide1,
+            SizedBox(
+              width: 350,
+              child: CarouselSlider(
+                items: [
+                  MyRoundedImage(
+                    imageUrl: MyImages.slide1,
+                  ),
+                  MyRoundedImage(
+                    imageUrl: MyImages.slide2,
+                  ),
+                  MyRoundedImage(
+                    imageUrl: MyImages.slide3,
+                  ),
+                ],
+                options: CarouselOptions(
+                  height: 160,
+                  viewportFraction: 1,
+                  onPageChanged: (index, reason) =>
+                      controller.updatePageIndicator(index),
+                  autoPlay: true,
+                  aspectRatio: 2,
+                  enableInfiniteScroll: true,
+                  initialPage: 0,
+                  autoPlayInterval: Duration(seconds: 3),
+                  pauseAutoPlayOnTouch: true,
                 ),
-                MyRoundedImage(
-                  imageUrl: MyImages.slide2,
-                ),
-                MyRoundedImage(
-                  imageUrl: MyImages.slide3,
-                ),
-              ],
-              options: CarouselOptions(
-                height: 160,
-                viewportFraction: 1,
-                onPageChanged: (index, reason) =>
-                    controller.updatePageIndicator(index),
-                autoPlay: true,
-                aspectRatio: 2,
-                enableInfiniteScroll: true,
-                initialPage: 0,
-                autoPlayInterval: Duration(seconds: 3),
-                pauseAutoPlayOnTouch: true,
               ),
             ),
             Positioned(
               top: 10,
-              left: 100,
+              left: 70,
               child: Obx(
                 () => Row(
                   children: [
