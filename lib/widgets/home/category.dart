@@ -14,7 +14,7 @@ class Category extends StatelessWidget {
       height: 160,
       child: Wrap(
         direction: Axis.horizontal,
-        spacing: 16,
+        // spacing: 16,
         runSpacing: 20,
         children: [
           ClickableImage(

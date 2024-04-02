@@ -17,7 +17,8 @@ class ClickableImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
+      child: Card(
+        elevation: 0,
         child: Column(
           children: [
             Image.asset(
@@ -25,7 +26,7 @@ class ClickableImage extends StatelessWidget {
               width: 48,
               height: 48,
             ),
-            SizedBox(height: 4),
+            SizedBox(height: 4,width: 72,),
             Text(
               text,
               style: MyTextStyles.category_style,
