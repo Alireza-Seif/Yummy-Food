@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:yummy_food/widgets/appbar/main_appbar_x.dart';
+import 'package:yummy_food/widgets/home/bottom_navigation_bar_x.dart';
 import 'package:yummy_food/widgets/home/carousel_loading.dart';
 import 'package:yummy_food/widgets/home/category.dart';
 import 'package:yummy_food/widgets/home/drawer_x.dart';
@@ -18,6 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: DrawerX(),
+      bottomNavigationBar: BottomNavigationBarX(),
       body: Column(
         children: [
           MainAppBarX(),
