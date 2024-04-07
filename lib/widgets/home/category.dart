@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yummy_food/constants/image_strings.dart';
+import 'package:yummy_food/screens/home/categories_screen.dart';
 import 'package:yummy_food/widgets/images/clickable_image.dart';
 
 class Category extends StatelessWidget {
@@ -55,7 +56,9 @@ class Category extends StatelessWidget {
           ClickableImage(
             imagePath: MyImages.other,
             text: 'Other',
-            onTap: () {},
+            onTap: () {
+              NavigatorPage(context, CategoriesScreen());
+            },
           ),
         ],
       ),
@@ -63,3 +66,8 @@ class Category extends StatelessWidget {
   }
 }
 
+void NavigatorPage(BuildContext context, Widget page) {
+  Navigator.of(context).push(
+    MaterialPageRoute(builder: (BuildContext context) => page),
+  );
+}

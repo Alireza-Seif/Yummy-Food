@@ -15,6 +15,10 @@ class MyImages {
   static String noodles = 'assets/images/category/noodles.webp';
   static String vegetable = 'assets/images/category/vegetable.webp';
   static String bbq = 'assets/images/category/bbq.webp';
+  static String fast_food = 'assets/images/category/fastfood.webp';
+  static String frozen = 'assets/images/category/frozen.webp';
+  static String korean_food = 'assets/images/category/korean_food.webp';
+  static String sweet_food = 'assets/images/category/sweet_food.webp';
+  static String drinks = 'assets/images/category/drinks.webp';
   static String other = 'assets/images/category/other.webp';
-  
 }

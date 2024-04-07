@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:yummy_food/components/icon/icon_view.dart';
 import 'package:yummy_food/constants/language/app_string.dart';
-import 'package:yummy_food/constants/theme/app_icons.dart';
+import 'package:yummy_food/constants/theme/app_colors.dart';
 import 'package:yummy_food/constants/theme/app_theme.dart';
 
 class SearchBarX extends StatelessWidget {
@@ -23,12 +22,10 @@ class SearchBarX extends StatelessWidget {
               borderSide: BorderSide.none),
           hintText: AppString.search,
           hintStyle: MyTextStyles.search_bar_one,
-          prefixIcon: SizedBox(
-            height: 20,
-            width: 20,
-            child: IconView(
-              icon: AppIcons.search_normal,
-            ),
+          prefixIcon: Icon(
+            Icons.search,
+            size: 40,
+            color: AppColors.grayscale60,
           ),
         ),
       ),
