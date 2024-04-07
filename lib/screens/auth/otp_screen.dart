@@ -55,41 +55,43 @@ class _OTPScreenState extends State<OTPScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          AppBarX(title: 'Enter OTP', destinationPage: SignUpScreen()),
-          SizedBox(height: 200),
-          Text(AppString.otp_enter, style: MyTextStyles.title_style_tow),
-          SizedBox(height: 16),
-          OtpForm(),
-          SizedBox(height: 16),
-          RichText(
-            text: TextSpan(
-              children: [
-                TextSpan(
-                    text: AppString.otp_verification,
-                    style: MyTextStyles.title_style_four),
-                TextSpan(
-                    text: ' 0922******', style: MyTextStyles.text_button_one)
-              ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            AppBarX(title: 'Enter OTP', destinationPage: SignUpScreen()),
+            SizedBox(height: 200),
+            Text(AppString.otp_enter, style: MyTextStyles.title_style_tow),
+            SizedBox(height: 16),
+            OtpForm(),
+            SizedBox(height: 16),
+            RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                      text: AppString.otp_verification,
+                      style: MyTextStyles.title_style_four),
+                  TextSpan(
+                      text: ' 0922******', style: MyTextStyles.text_button_one)
+                ],
+              ),
             ),
-          ),
-          SizedBox(height: 24),
-          RichText(
-            text: TextSpan(
-              children: [
-                TextSpan(
-                    text: AppString.otp_have,
-                    style: MyTextStyles.title_style_three),
-                TextSpan(
-                    text: 'Resend ($_start seconds)',
-                    style: MyTextStyles.text_button_one)
-              ],
+            SizedBox(height: 24),
+            RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                      text: AppString.otp_have,
+                      style: MyTextStyles.title_style_three),
+                  TextSpan(
+                      text: 'Resend ($_start seconds)',
+                      style: MyTextStyles.text_button_one)
+                ],
+              ),
             ),
-          ),
-          SizedBox(height: 32),
-          ContinueBTN(destinationPage: HomeScreen()),
-        ],
+            SizedBox(height: 32),
+            ContinueBTN(destinationPage: HomeScreen()),
+          ],
+        ),
       ),
     );
   }

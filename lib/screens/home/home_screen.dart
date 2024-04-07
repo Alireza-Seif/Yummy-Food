@@ -20,16 +20,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       drawer: DrawerX(),
       bottomNavigationBar: BottomNavigationBarX(),
-      body: Column(
-        children: [
-          MainAppBarX(),
-          SizedBox(height: 12),
-          SearchBarX(),
-          SizedBox(height: 8),
-          CarouselSliderX(),
-          SizedBox(height: 16),
-          Category(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            MainAppBarX(),
+            SizedBox(height: 12),
+            SearchBarX(),
+            SizedBox(height: 8),
+            CarouselSliderX(),
+            SizedBox(height: 16),
+            Category(),
+          ],
+        ),
       ),
     );
   }
